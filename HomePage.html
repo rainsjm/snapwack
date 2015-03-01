@@ -28,66 +28,57 @@
     <div class="Starter-Page">
        <div class="row">
        	<div class="col-md-8">
-<form name='registration' onSubmit="return formValidation();">
+<form name='registration' onSubmit="javascript:void(0);">
 <ul>
 <h2>Create an account</h2>
 <p>
 	</p>
-<label for="userid">User Name:   </label>
-<input type="text" name="userid" size="20" />	
+<span class="username"></span><input type="text" required placeholder="User name" autocomplete="off"> 
 <p>
 	</p>
 
-<label for="passid">Password:   </label>
-<input type="password" name="passid" size="20" />
+<span class="password"></span><input type="password" name="password" id="password" required placeholder="Password" autocomplete="off"> 
+
 <p>
 	</p>
 
-<label for="email">Email:   </label>
-<input type="text" name="email" size="50" />
-<p>
+<span class="email"></span><input type="text" id="email" required placeholder="Email" autocomplete="off">
+
 	</p>
 
 <label id="gender">Gender:</label>
 <p>
 	</p>
 
-<input type="radio" name="sex" value="Male" /><span> Male</span>
+<input type="radio" name="gender" value=" Male" required> Male   </input>
+
+<input type="radio" name="gender" value=" Female" required> Female</input>
+
+<input type="radio" name="gender" value=" Prefer not to say" required> Prefer not to say</input>
+
+<p>
+	</p>
+<input type="checkbox" name="logged" value="Terms" required>I've read Terms and Conditions</input>
 <p>
 	</p>
 
-<input type="radio" name="sex" value="Female" /><span> Female</span>
-<p>
-	</p>
-
-<input type="radio" name="sex" value="Prefer not to say" /><span> Prefer not to say</span>
-<label ></label>
-<p>
-	</p>
-<input type="checkbox" name="logged" value="Terms" /><span> I've read Terms and Conditions</span>
-<p>
-	</p>
-<input type="submit" name="submit" value="Sign Up" /><span>
-<p>
-	</p>
+<button type="submit" formaction="confirmation.html">Sign Up</button>
 </div>
 
 <div class="col-md-4">
         <div class="row">
 
 <h2><left>Already a member?</left></h2>
-<label for="email">Email:   </label>
-<input type="text" name="email" size="50" />
+<span class="email2"></span><input type="text" id="email2"  placeholder="Email" autocomplete="on">
 <p>
 	</p>
-	<label for="passid">Password:   </label>
-<input type="password" name="passid" size="20" />
+<span class="password2"></span><input type="password" name="password2 " id="password"  placeholder="Password" autocomplete="off"> 
 <p>
 	</p>
 	<input type="checkbox" name="logged" value="Keep me logged in" /><span> Keep me logged in</span>
 <p>
 	</p>
-<input type="submit" name="submit" value="Log In" /><span>
+<input type="button" onClick="location.href='confirmation.html'" value= 'Log In'>
 </div>
 
 </ul>
