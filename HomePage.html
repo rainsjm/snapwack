@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/starter-template.css" rel="stylesheet">
+
+   
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+   
+  </head>
+<body onload="document.registration.userid.focus();">
+
+<header>
+	<h1> <center>  Parroty </center></h1>
+</header>
+
+<div class="Home-Page">
+    <div class="Starter-Page">
+       <div class="row">
+       	<div class="col-md-8">
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<h2>Create an account</h2>
+<p>
+	</p>
+<label for="userid">User Name:   </label>
+<input type="text" name="userid" size="20" />	
+<p>
+	</p>
+
+<label for="passid">Password:   </label>
+<input type="password" name="passid" size="20" />
+<p>
+	</p>
+
+<label for="email">Email:   </label>
+<input type="text" name="email" size="50" />
+<p>
+	</p>
+
+<label id="gender">Gender:</label>
+<p>
+	</p>
+
+<input type="radio" name="sex" value="Male" /><span> Male</span>
+<p>
+	</p>
+
+<input type="radio" name="sex" value="Female" /><span> Female</span>
+<p>
+	</p>
+
+<input type="radio" name="sex" value="Prefer not to say" /><span> Prefer not to say</span>
+<label ></label>
+<p>
+	</p>
+<input type="checkbox" name="logged" value="Terms" /><span> I've read Terms and Conditions</span>
+<p>
+	</p>
+<input type="submit" name="submit" value="Sign Up" /><span>
+<p>
+	</p>
+</div>
+
+<div class="col-md-4">
+        <div class="row">
+
+<h2><left>Already a member?</left></h2>
+<label for="email">Email:   </label>
+<input type="text" name="email" size="50" />
+<p>
+	</p>
+	<label for="passid">Password:   </label>
+<input type="password" name="passid" size="20" />
+<p>
+	</p>
+	<input type="checkbox" name="logged" value="Keep me logged in" /><span> Keep me logged in</span>
+<p>
+	</p>
+<input type="submit" name="submit" value="Log In" /><span>
+</div>
+
+</ul>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<script>
+window.onload = choosePic;
+
+var myPix = new Array("images/img_1.jpg","images/img_2.jpg","images/img_3.jpg");
+
+function choosePic() {
+  randomNum = Math.floor((Math.random() * myPix.length));
+  document.getElementById("myPicture").src = myPix[randomNum];
+}
+</script>
+        
+
+  </body>
+</html>
