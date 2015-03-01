@@ -28,6 +28,8 @@
   </head>
 
   <body>
+    <header>
+<a href = "HomePage.html"><img src = "ParrotyWebHeader.png" style="width:1300px;heigh:300px" alt = "Parroty"/></a></header>
 
 <!--  <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -65,10 +67,19 @@
 <img src="images/spacer.gif" width="305" height="312" id="myPicture" alt="Challenge picture" />
         </div>
         <div class="col-md-12">
-<button type="button" class="btn btn-default">Upload</button>
-        </div>
+          <p>
+          </p>
+<div style="height:0px;overflow:hidden">
+   <input type="file" id="fileInput" name="fileInput" />
+</div>
+<button type="button" onclick="chooseFile();">choose file</button>
+
+<script>
+   function chooseFile() {
+      $("#fileInput").click();
+   }
+</script>        </div>
         <div class="row">
-        <h1>Rankings</h1>
 
         </div>
 
